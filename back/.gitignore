@@ -1,0 +1,6 @@
+bin/*
+log/*
+temp/*
+vendor/*
+composer.json
+composer.lock
