@@ -106,7 +106,7 @@ abstract class AbstractGenerator
 
 		return new \CallbackFilterIterator(
 			$iterator,
-			fn(\SplFileInfo $file): bool => $file->getBasename()[0] !== '.'  // . or .. or .gitignore
+			fn(\SplFileInfo $file): bool => $file->getBasename()[0] !== '.'  // . or .. or
 				&& in_array($file->getExtension(), $this->acceptFiles, true)
 		);
 	}
