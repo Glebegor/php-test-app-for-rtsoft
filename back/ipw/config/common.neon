@@ -1,0 +1,29 @@
+parameters:
+
+
+application:
+	errorPresenter:
+		4xx: Error:Error4xx
+		5xx: Error:Error5xx
+	mapping: App\UI\*\**Presenter
+
+
+database:
+	dsn: 'mysql:host=127.0.0.1;port=3306;dbname=ipw'
+	user: root
+	password: '123321'
+	options:
+		PDO::MYSQL_ATTR_INIT_COMMAND: "SET NAMES utf8"
+
+latte:
+	strictTypes: yes
+
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		parameters: no
+		tags: no
