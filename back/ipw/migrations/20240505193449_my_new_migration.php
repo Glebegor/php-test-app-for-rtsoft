@@ -6,19 +6,20 @@ use Phinx\Migration\AbstractMigration;
 
 final class MyNewMigration extends AbstractMigration
 {
-    /**
-     * Change Method.
-     *
-     * Write your reversible migrations using this method.
-     *
-     * More information on writing migrations is available here:
-     * https://book.cakephp.org/phinx/0/en/migrations.html#the-change-method
-     *
-     * Remember to call "create()" or "update()" and NOT "save()" when working
-     * with the Table class.
-     */
-    public function change(): void
+    public function change()
     {
+        // create the table
+        $table_users = $this->table('users');
+        $table_users->addColumn('id', 'integer', ['signed' => false, 'identity' => true])
+            ->addColumn('username', 'string', ['limit' => 100])
+            ->addColumn('email', 'string', ['limit' => 255])
+            ->addIndex(['email'], ['unique' => true]) // Ensure email uniqueness
+            ->create();
 
+        if ($this->isMigratingUp()) {
+            $table_users->insert([['username' => 'admin', 'email' => 'admin@gmail.com']])
+                ->save();
+        }
     }
+
 }
