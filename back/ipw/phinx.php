@@ -12,7 +12,7 @@ return
         'production' => [
             'adapter' => 'mysql',
             'host' => 'ipw',
-            'name' => 'ipw',
+            'name' => 'localhost',
             'user' => 'root',
             'pass' => '123321',
             'port' => '3306',
@@ -20,7 +20,7 @@ return
         ],
         'development' => [
             'adapter' => 'mysql',
-            'host' => 'ipw',
+            'host' => 'localhost',
             'name' => 'ipw',
             'user' => 'root',
             'pass' => '123321',
@@ -29,8 +29,8 @@ return
         ],
         'testing' => [
             'adapter' => 'mysql',
-            'host' => 'ipw',
-            'name' => 'ipw',
+            'host' => 'localhost',
+            'name' => 'test',
             'user' => 'root',
             'pass' => '123321',
             'port' => '3306',
