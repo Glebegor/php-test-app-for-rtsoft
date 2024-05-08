@@ -1,18 +1,17 @@
 <?php
 
-return
-[
+return [
     'paths' => [
         'migrations' => __DIR__ . '/migrations',
-        'seeds' => '%%PHINX_CONFIG_DIR%%/db/seeds'
+        'seeds' => __DIR__ . '/seeds'
     ],
     'environments' => [
         'default_migration_table' => 'phinxlog',
         'default_environment' => 'development',
         'production' => [
             'adapter' => 'mysql',
-            'host' => 'ipw',
-            'name' => 'localhost',
+            'host' => '127.0.0.1',
+            'name' => 'test', // Change this to match your database name
             'user' => 'root',
             'pass' => '123321',
             'port' => '3306',
@@ -20,8 +19,8 @@ return
         ],
         'development' => [
             'adapter' => 'mysql',
-            'host' => 'localhost',
-            'name' => 'ipw',
+            'host' => '127.0.0.1',
+            'name' => 'test', // Change this to match your database name
             'user' => 'root',
             'pass' => '123321',
             'port' => '3306',
@@ -29,8 +28,8 @@ return
         ],
         'testing' => [
             'adapter' => 'mysql',
-            'host' => 'localhost',
-            'name' => 'test',
+            'host' => '127.0.0.1',
+            'name' => 'test', // Change this to match your database name
             'user' => 'root',
             'pass' => '123321',
             'port' => '3306',
