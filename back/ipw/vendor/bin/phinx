@@ -12,6 +12,7 @@
 
 namespace Composer;
 
+// Load environment variables from the .env file in the current directory
 $GLOBALS['_composer_bin_dir'] = __DIR__;
 $GLOBALS['_composer_autoload_path'] = __DIR__ . '/..'.'/autoload.php';
 
