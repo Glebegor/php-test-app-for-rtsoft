@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 return [
     'paths' => [
@@ -10,30 +13,30 @@ return [
         'default_environment' => 'development',
         'production' => [
             'adapter' => 'mysql',
-            'host' => '127.0.0.1',
-            'name' => 'test', // Change this to match your database name
-            'user' => 'root',
-            'pass' => '123321',
-            'port' => '3306',
-            'charset' => 'utf8',
+            'host' => $_ENV['DATABASE_HOST'],
+            'name' => $_ENV['DATABASE_NAME'],
+            'user' => $_ENV['DATABASE_USER'],
+            'pass' => $_ENV['DATABASE_ROOT_PASSWORD'],
+            'port' => $_ENV['DATABASE_PORT'],
+            'charset' => $_ENV['DATABASE_CODING'],
         ],
         'development' => [
             'adapter' => 'mysql',
-            'host' => '127.0.0.1',
-            'name' => 'test', // Change this to match your database name
-            'user' => 'root',
-            'pass' => '123321',
-            'port' => '3306',
-            'charset' => 'utf8',
+            'host' => $_ENV['DATABASE_HOST'],
+            'name' => $_ENV['DATABASE_NAME'],
+            'user' => $_ENV['DATABASE_USER'],
+            'pass' => $_ENV['DATABASE_ROOT_PASSWORD'],
+            'port' => $_ENV['DATABASE_PORT'],
+            'charset' => $_ENV['DATABASE_CODING'],
         ],
         'testing' => [
             'adapter' => 'mysql',
-            'host' => '127.0.0.1',
-            'name' => 'test', // Change this to match your database name
-            'user' => 'root',
-            'pass' => '123321',
-            'port' => '3306',
-            'charset' => 'utf8',
+            'host' => $_ENV['DATABASE_HOST'],
+            'name' => $_ENV['DATABASE_NAME'],
+            'user' => $_ENV['DATABASE_USER'],
+            'pass' => $_ENV['DATABASE_ROOT_PASSWORD'],
+            'port' => $_ENV['DATABASE_PORT'],
+            'charset' => $_ENV['DATABASE_CODING'],
         ]
     ],
     'version_order' => 'creation'
