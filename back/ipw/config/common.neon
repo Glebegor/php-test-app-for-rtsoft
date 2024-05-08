@@ -9,7 +9,7 @@ application:
 
 
 database:
-	dsn: 'mysql:host=127.0.0.1;port=3306;dbname=ipw'
+	dsn: 'mysql:host=127.0.0.1;port=3306;dbname=test'
 	user: root
 	password: '123321'
 	options:

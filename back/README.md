@@ -15,6 +15,19 @@ It's api that has protection by JWT tokens.
 ## DB
 ## docs
 ## env
+### .env
+
+```dotenv
+DATABASE_ROOT_PASSWORD="123321"
+DATABASE_HOST='127.0.0.1'
+DATABASE_NAME='test'
+DATABASE_USER='root'
+DATABASE_PORT='3306'
+DATABASE_CODDING='utf8'
+
+SECRET_KEY="--SECRET--"
+```
+
 ## How to run
 ### makefile commands
 #### runtestdb
