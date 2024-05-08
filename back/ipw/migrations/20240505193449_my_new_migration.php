@@ -17,7 +17,7 @@ final class MyNewMigration extends AbstractMigration
             ->addIndex(['email'], ['unique' => true]) // Ensure email uniqueness
             ->create();
 
-        $compress_logs = $this->table('$compress_logs');
+        $compress_logs = $this->table('compress_logs');
         $compress_logs
             ->addColumn('user_id', 'integer', ['signed' => false])
             ->addColumn('compress_time', 'datetime')
