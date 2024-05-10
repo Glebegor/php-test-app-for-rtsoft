@@ -6,3 +6,12 @@ vendor
 vendor/
 composer.json
 composer.lock
+
+ipw/.env
+.env.example
+.env.local
+.env.test
+.env.prod
+.env.development
+.env.staging
+.env.production
