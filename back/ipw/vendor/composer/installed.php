@@ -3,7 +3,7 @@
         'name' => 'nette/web-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'a7a7dcf6adf98319603f8b0cc696343cd60f00ee',
+        'reference' => 'ab8b20c83e4f41e3a2ec544df8768ae654bc43b2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -238,7 +238,7 @@
         'nette/web-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'a7a7dcf6adf98319603f8b0cc696343cd60f00ee',
+            'reference' => 'ab8b20c83e4f41e3a2ec544df8768ae654bc43b2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -258,6 +258,15 @@
             'install_path' => __DIR__ . '/../phpoption/phpoption',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'phpstan/phpstan' => array(
+            'pretty_version' => '1.10.67',
+            'version' => '1.10.67.0',
+            'reference' => '16ddbe776f10da6a95ebd25de7c1dbed397dc493',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpstan/phpstan',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'psr/container' => array(
             'pretty_version' => '2.0.2',
