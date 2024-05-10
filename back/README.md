@@ -1,8 +1,10 @@
 # Backend 
 ## stack
-### Backend
-- Php (Nette)
+- Php (Nette, Nette tester)
 - Phinx
+- PHPUnit
+- Rector
+- PHPStan
 - MySQL
 - Docker
 - Makefile
