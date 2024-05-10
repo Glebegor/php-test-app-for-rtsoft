@@ -3,7 +3,7 @@
         'name' => 'nette/web-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'ab8b20c83e4f41e3a2ec544df8768ae654bc43b2',
+        'reference' => '44f834dd48e24c2287595764afa305138d44071c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -238,7 +238,7 @@
         'nette/web-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'ab8b20c83e4f41e3a2ec544df8768ae654bc43b2',
+            'reference' => '44f834dd48e24c2287595764afa305138d44071c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -307,6 +307,15 @@
             'install_path' => __DIR__ . '/../psr/simple-cache',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'rector/rector' => array(
+            'pretty_version' => '1.0.5',
+            'version' => '1.0.5.0',
+            'reference' => '73eb63e4f9011dba6b7c66c3262543014e352f34',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rector/rector',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'robmorgan/phinx' => array(
             'pretty_version' => '0.16.0',
