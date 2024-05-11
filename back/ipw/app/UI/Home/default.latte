@@ -1,4 +1,16 @@
 {* This is the welcome page, you can delete it *}
 
 {block content}
-Main app
+	<h1>All users;</h1>
+
+	{foreach $user as $users}
+	<div class="post">
+		<div class="date">{$user}</div>
+
+		<h2>{$post->username}</h2>
+
+		<div>{$post->password|truncate:256}</div>
+		<div>{$post->email|truncate:256}</div>
+	</div>
+	{/foreach}
+{/block}
