@@ -13,10 +13,10 @@ use Tracy\ILogger;
 /**
  * Handles uncaught exceptions and errors, and logs them.
  */
-final class HomepagePresenter implements Nette\Application\IPresenter
+final class HomepagePresenter extends Nette\Application\UI\Presenter
 {
-    public function run(Nette\Application\Request $request): Nette\Application\Response
+    public function renderDefault(): void
     {
-
+        $this->template->title = 'Homepage';
     }
 }
