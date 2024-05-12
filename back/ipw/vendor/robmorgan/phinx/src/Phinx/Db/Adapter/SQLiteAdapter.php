@@ -342,7 +342,7 @@ class SQLiteAdapter extends PdoAdapter
     /**
      * Searches through all available schemata to find a table and returns an array
      * containing the bare schema name and whether the table exists at all.
-     * If no schema was specified and the table does not exist the "main" schema is returned
+     * If no schema was specified and the table does not exist the "Main" schema is returned
      *
      * @param string $tableName The name of the table to find
      * @return array
@@ -360,7 +360,7 @@ class SQLiteAdapter extends PdoAdapter
                     $schemata[] = $row['name'];
                 }
             }
-            $defaultSchema = 'main';
+            $defaultSchema = 'Main';
         } else {
             // otherwise we search just the specified schema
             $schemata = (array)$info['schema'];
