@@ -16,8 +16,12 @@ final class HomePresenter extends Nette\Application\UI\Presenter
 
     public function renderDefault(): void
     {
-        $this->template->users = $this->database
+        $this->template->users_data = $this->database
             ->table('users')
-            ->limit(5);
+            ->limit(5)
+            ->fetchAll(); // Fetch all rows from the users table
+
+        // Render the template
+        $this->template->render(__DIR__ . '/default.latte');
     }
 }

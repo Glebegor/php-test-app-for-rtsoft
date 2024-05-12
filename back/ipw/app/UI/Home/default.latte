@@ -1,16 +1,12 @@
-{* This is the welcome page, you can delete it *}
-
 {block content}
-	<h1>All users;</h1>
+	<h1>All users:</h1>
 
-	{foreach $user as $users}
-	<div class="post">
-		<div class="date">{$user}</div>
-
-		<h2>{$post->username}</h2>
-
-		<div>{$post->password|truncate:256}</div>
-		<div>{$post->email|truncate:256}</div>
-	</div>
+	{foreach $users_data as $user_data}
+		<div class="post">
+			<div class="date">{$user_data->username}</div>
+			<h2>{$user_data->username}</h2>
+			<div>{$user_data->password|truncate:256}</div>
+			<div>{$user_data->email|truncate:256}</div>
+		</div>
 	{/foreach}
 {/block}
