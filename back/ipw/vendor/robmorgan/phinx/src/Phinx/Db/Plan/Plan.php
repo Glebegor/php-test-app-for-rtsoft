@@ -30,7 +30,7 @@ use Phinx\Db\Table\Table;
  * A Plan takes an Intent and transforms int into a sequence of
  * instructions that can be correctly executed by an AdapterInterface.
  *
- * The main focus of Plan is to arrange the actions in the most efficient
+ * The Main focus of Plan is to arrange the actions in the most efficient
  * way possible for the database.
  */
 class Plan

@@ -86,7 +86,7 @@ class Bar
 				Debugger::log(new \LogicException('Tracy cannot display the Bar because the Content-Length header is being sent'), Debugger::EXCEPTION);
 			}
 
-			$content = $this->renderPartial('main');
+			$content = $this->renderPartial('Main');
 
 			foreach (array_reverse($redirectQueue) as $item) {
 				$content['bar'] .= $item['content']['bar'];

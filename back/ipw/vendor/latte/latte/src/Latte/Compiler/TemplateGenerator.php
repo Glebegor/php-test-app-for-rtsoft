@@ -40,7 +40,7 @@ final class TemplateGenerator
 		$context = new PrintContext($node->contentType);
 		$code = $node->main->print($context);
 		$code = self::buildParams($code, [], '$ʟ_args', $context);
-		$this->addMethod('main', $code, 'array $ʟ_args');
+		$this->addMethod('Main', $code, 'array $ʟ_args');
 
 		$head = (new NodeTraverser)->traverse($node->head, fn(Node $node) => $node instanceof Nodes\TextNode ? new Nodes\NopNode : $node);
 		$code = $head->print($context);

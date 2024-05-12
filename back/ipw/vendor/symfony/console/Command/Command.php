@@ -202,7 +202,7 @@ class Command
      * Initializes the command after the input has been bound and before the input
      * is validated.
      *
-     * This is mainly useful when a lot of commands extends one main command
+     * This is mainly useful when a lot of commands extends one Main command
      * where some things need to be initialized based on the input arguments and options.
      *
      * @see InputInterface::bind()

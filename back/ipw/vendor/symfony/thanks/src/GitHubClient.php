@@ -23,9 +23,9 @@ use Composer\Util\HttpDownloader;
  */
 class GitHubClient
 {
-    // This is a list of projects that should get a star on their main repository
+    // This is a list of projects that should get a star on their Main repository
     // (when there is one) whenever you use any of their other repositories.
-    // When a project's main repo is also a dependency of their other repos (like amphp/amp),
+    // When a project's Main repo is also a dependency of their other repos (like amphp/amp),
     // there is no need to list it here, as starring will transitively happen anyway.
     private static $mainRepositories = [
         'api-platform' => [
@@ -137,7 +137,7 @@ class GitHubClient
             }
             $owner = $url[1];
 
-            // star the main repository, but only if this package is directly
+            // star the Main repository, but only if this package is directly
             // being required by the user's composer.json
             if (isset(self::$mainRepositories[$owner], $directPackages[$package->getName()])) {
                 $urls[self::$mainRepositories[$owner]['name']] = self::$mainRepositories[$owner]['url'];

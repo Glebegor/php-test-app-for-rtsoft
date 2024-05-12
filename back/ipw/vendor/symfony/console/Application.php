@@ -58,7 +58,7 @@ use Symfony\Contracts\Service\ResetInterface;
 /**
  * An Application is the container for a collection of commands.
  *
- * It is the main entry point of a Console application.
+ * It is the Main entry point of a Console application.
  *
  * This class is optimized for a standard CLI environment.
  *

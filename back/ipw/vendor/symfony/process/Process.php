@@ -1175,7 +1175,7 @@ class Process implements \IteratorAggregate
      * @see https://php.net/proc_open for the options supported by PHP.
      *
      * Enabling the "create_new_console" option allows a subprocess to continue
-     * to run after the main process exited, on both Windows and *nix
+     * to run after the Main process exited, on both Windows and *nix
      */
     public function setOptions(array $options): void
     {
